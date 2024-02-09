@@ -20,3 +20,12 @@ Before running this project, ensure you have the following prerequisites set up:
 ## Installation
 1. Clone this repository to your local machine.
 2. Install the required Python dependencies using pip install -r requirements.txt
+
+## Challenges
+1. creepjs apperently is one of the best page which seems to have alot of tests/checks in order to identify the browser as human or bot.
+2. It already has tests to block out the stealth which have been ever developed for the playwright(playwright-stealth) or Puppeteer-extra-plugin-stealth. This made it difficult to invade this using the existing developed libraries/tools.
+3. creepjs had alot of coverage of tests including the broswer properties, navigator properties, hardware configuration etc. But appearently none of the above mentioned stealth tools were able to pretend as webdriver = False.
+4. Thats where I tried using the undetected_chromedriver along with setting some extra properties to make it believe that its not a webdriver which is accessing the page.
+5. Other than this proxies places an important role in keep refreshing the session to generate new fingerprints.
+6. I tried using data center proxies from Germany, Romania and USA and all works fine. Also tested the residential proxies, they work on this as well.
+
