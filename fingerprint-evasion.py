@@ -5,7 +5,7 @@ import base64
 from bs4 import BeautifulSoup
 import undetected_chromedriver as uc
 
-# Configure your proxy host and por
+# Configure your proxy host and port
 PROXY = "vmw.xxxxxx.com:19888"
 
 
